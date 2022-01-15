@@ -1,0 +1,229 @@
+/* common style */
+body{
+     font-family:'Poppins', sans-serif; 
+      background-color: #f5f5f5ed;;
+}
+.blog{
+     display: flex;
+     align-items: center;;
+    justify-content: center;;
+}
+
+.container{
+     display:flex;
+     width: 85%;
+     justify-content: space-between;
+     margin-bottom: 50px;;
+   
+     }
+/* nav styles */
+.nav_bar{
+     margin-top: 10px;
+     align-items: center;
+}
+.nav_bar a{
+     text-decoration: none;
+     color: black;
+}
+.nav_logo a{
+     font-size: 24px;
+     font-weight: 700;
+}
+.nav_item ul{
+     list-style: none;
+     display: flex;
+}
+.nav_bar ul li a{
+     font-size: 16px;;
+     margin-right: 30px;
+     font-weight: 600;
+}
+/* journey to influencer */
+.influ{
+     width: 582px;
+     height: 269.9px;;
+}
+.influ_title{
+     font-size: 52px;
+     line-height: 70px;
+     margin-bottom: 15px;;
+}
+.influ_detail{
+     font-size: 16px;
+     margin-bottom: 25px;;
+}
+.btn{
+     text-decoration: none;
+     font-size: 16px;
+     background-color:#FF2C49 ;
+     padding: 10px 24px 10px 24px;
+     color: white;;
+     border-radius: 41px;
+}
+.gadget img{
+     height: 414px;
+     width: 440px;
+     background-color:#f5ebf3;
+     border-radius: 50%;;
+}
+/* products */
+.blog{
+     display:flex;
+     align-items: center;;
+}
+.products{
+     display: grid;
+     width: 85%;
+    grid-template-columns: repeat(3, 1fr);
+}
+.product_head{
+     font-size: 28px;
+     text-align: center;;
+}
+.product{
+     background-color: #ffffff;
+     width: 340.31px;
+     border-radius: 5px; 
+      margin-bottom: 20px;;
+}
+.product_title, .product_price{
+     margin:5px ;
+}
+
+.product_detail{
+     padding:0px 18px;
+}
+
+.product_price{
+     font-size: 24px;
+     line-height: 36px;
+     font-weight: 400;
+}
+     .product_rating {
+     color:#E98F00;
+     margin-top: -10px;
+     }
+.product_img{
+     width: 300px;
+     height: 240px;
+     border-radius: 10px;
+     padding: 18px ;
+}
+.see_more{
+     text-decoration: none;
+     color:#FF2C49 ;
+     position: absolute;
+     right: 11%;
+     font-weight: 700;
+     font-size: 16px;; 
+}
+/* footer styles */
+footer{
+background-color: #110825;
+color: white;
+margin-top: 50px;;
+text-align: center;
+}
+.footer_title{
+     font-size: 24px;
+     padding-top:50px;
+}
+.footer_desc{
+     margin: 0px;
+     font-size: 16px;;
+}
+footer span{
+     display:block
+}
+.social_icons a{
+     text-decoration: none;
+     color:white;
+}
+
+.fab{
+     font-size: 30px;
+     margin-left: 30px;;
+     padding-top: 10px;
+     height: 35px;
+     width: 35px;
+     padding: 2px;
+     border-radius: 50%;
+     margin-bottom: 0px;
+     background-color: rgba(160, 160, 160, 0.171);
+}
+.social_icons{
+     padding-bottom: 50px;;
+}
+/* ----------------------
+        Media Queries
+-------------------------*/
+/* Mobile Devices */
+@media only screen and (max-width: 481px) and (max-height: 768px) {
+     /* nav bar responsiveness */
+     .nav_item ul li a{
+          display: none;;
+     }
+     .shopoing_cart{
+          display:inline;
+          font-size: 20px;;
+     }
+     .nav_bar{
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;;
+     }
+     .influencer{
+          display:grid;
+          width: 85%;
+          grid-template-rows: repeat(1, 1fr);
+          grid-row-gap: 50px;
+          justify-content: center;
+          align-items: center;;
+     }
+   .influ{
+        width: 85%;
+        padding: 30px;;
+        text-align: center;;
+   }
+     
+     .influ_title{
+          font-size:22px;
+          line-height: 1.5;
+     }
+     .gadget{
+          display:flex;
+         justify-content: center;
+     }
+     .gadget img{
+          width: 257px;
+          height: 257px;
+     }
+     /* products responsivenes */
+     .product_head{
+          font-size: 20px;;
+     }
+     .products{
+          grid-template-columns: repeat(1, 1fr);
+          
+     }
+     .product{
+          width:85%;
+         margin-left: 5%;;
+     }
+     .product_img{
+          width: 240px;
+     }
+     .see_more{
+          right: 20%;
+     }
+     .footer_title{
+          font-size: 20px;;
+     }
+     .social_icons{
+          margin-left: 5px;;
+     }
+     .footer_desc{
+          font-size: 14px;;
+     }
+}    
